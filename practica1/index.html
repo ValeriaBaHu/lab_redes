@@ -51,17 +51,17 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Titulo de la practica de laboratorio</h1>
+                        <h1 class="fw-bolder mb-1">Entradas y salidas digitales</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />
                             <div class="ms-2">
-                                <div class="fw-bold">Nombre de integrante del equipo</div>
-                                <div class="text-muted">Carrera que estudia</div>
+                                <div class="fw-bold">Karen Itzel Najera De Gante y Valeria Barroso Huitrón</div>
+                                <div class="text-muted">Ingeniería mecatronica</div>
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mes dia, Año</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">30/01/2025</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
@@ -78,53 +78,98 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Esta práctica permite comprender de manera clara y aplicada el funcionamiento de las entradas y salidas digitales en un microcontrolador,
+                             que son fundamentales en la electrónica y redes digitales. Al trabajar con un NodeMCU (ESP8266 o ESP32), se exploran los conceptos de cómo 
+                             las señales digitales pueden ser recibidas desde componentes como botones (entradas digitales) y cómo, a su vez, se pueden enviar señales 
+                             hacia dispositivos como LEDs (salidas digitales).</p>
+                        <p class="fs-6 mb-4">A través de la programación, se conecta la teoría con la práctica, permitiendo controlar el LED mediante las entradas de los botones. 
+                            De esta forma, se logra entender cómo los estados lógicos (0 y 1) se traducen en acciones físicas, como encender, apagar o hacer parpadear un
+                             LED.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Las entradas y salidas digitales son conceptos fundamentales en la electrónica y en el mundo de los microcontroladores. 
+                            Las entradas digitales son señales que provienen de dispositivos externos, como botones, sensores o interruptores, que permiten al 
+                            microcontrolador recibir información. Por otro lado, las salidas digitales son señales que el microcontrolador envía a dispositivos externos,
+                             como LEDs, relés o motores, para realizar alguna acción, también representadas por los estados "0" o "1". Estas salidas permiten controlar 
+                             o activar diferentes componentes físicos en función de la lógica programada en el microcontrolador.</p>
+                        <p class="fs-6 mb-4">Una señal digital es un tipo de señal generada por algún tipo de fenómeno electromagnético en que cada signo que codifica 
+                            el contenido de la misma puede ser analizado en término de algunas magnitudes que representan valores discretos, en lugar de valores dentro
+                             de un cierto rango.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">1 LED</p>
+                            <p class="fs-6 mb-4"> 4 botones</p>
+                            <p class="fs-6 mb-4"> 4 resistencias de 1K ohm</p>
+                            <p class="fs-6 mb-4"> Protoboard y cables</p>
+                            <p class="fs-6 mb-4"> 1 resistencia de 220 ohms</p>
+                          </p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se configuró el entorno de desarrollo Arduino IDE para programar el NodeMCU, instalando las herramientas
+                            necesarias y verificando la correcta asignación de pines mediante su pinout. Una vez listo el entorno, se desarrollaron distintos programas
+                            para controlar un LED utilizando diferentes métodos. Inicialmente, se programó el encendido y apagado del LED mediante señales digitales a
+                            un GPIO, seguido de una versión con retardos para generar un parpadeo controlado. Posteriormente, se incorporó un botón como entrada digital
+                            para activar o desactivar el LED al presionarlo.</p>
+                        <p class="fs-6 mb-4">Cada etapa del desarrollo fue probada y validada, asegurando su correcto funcionamiento. La práctica permitió comprender la
+                             configuración del NodeMCU, la gestión de entradas y salidas digitales y la aplicación de estructuras lógicas en la programación de microcontroladores.</p>
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                            <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación utilizando Wokwi y
+                                 el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite emular el comportamiento de 
+                                 microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones sin necesidad de hardware físico.</p>
+                            <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi. Esto permitió identificar
+                                 y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a esta etapa de simulación, 
+                                 se optimizó el diseño
+                                  y se garantizó que la lógica de control funcionara correctamente, minimizando riesgos en la fase de construcción.
+                                </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
                     
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                            <p class="fs-6 mb-4">Para el diseño, se definió la estructura y configuración del circuito, seleccionando los componentes adecuados y asignando los GPIOs del
+                                 NodeMCU para garantizar su correcto funcionamiento. Se elaboraron esquemas eléctricos que guiaron la conexión de elementos como LEDs, resistencias y
+                                  botones, permitiendo una implementación ordenada y eficiente. Además, se consideraron aspectos como la distribución de señales, la estabilidad del
+                                   sistema y la facilidad de montaje en una protoboard, asegurando un diseño funcional y replicable.</p>
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                            <p class="fs-6 mb-4">En esta sección se presentan imágenes de los circuitos completamente ensamblados, destacando la correcta conexión
+                                 de los componentes utilizados en la práctica. Cada montaje fue realizado siguiendo el esquema correspondiente, asegurando la 
+                                 adecuada distribución de los GPIOs del NodeMCU, así como la correcta integración de elementos como LEDs, resistencias y botones.
+                                  Las fotografías ilustran el proceso de construcción, desde la disposición inicial de los componentes en una protoboard hasta la 
+                                  configuración final del circuito funcional</p>
                             <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                             
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Se muestran los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento 
+                            de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
+                            como la ejecución de los distintos programas desarrollados para el control del LED.</p>
+                        <p class="fs-6 mb-4">Cada video muestra el comportamiento del circuito en respuesta a las instrucciones programadas, incluyendo el encendido
+                             y apagado del LED, el uso de retardos para generar parpadeo y la implementación de botones con condiciones lógicas OR y AND. Estos
+                              resultados confirman la funcionalidad de los programas y el cumplimiento de los objetivos planteados en la práctica.
+
+                        </p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
                             <source src="video/Robot.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Para finalizar, esta practica, nos permitió profundizar en conocimientos fundamentales sobre la 
+                            configuración del Arduino IDE para programar el NodeMCU, así como la importancia de comprender su distribución 
+                            de pines y GPIO disponibles. Se logró establecer una comunicación efectiva entre el entorno de desarrollo y la 
+                            construcción de los modelos, garantizando su correcta programación. A través de la implementación de diferentes 
+                            programas, se exploraron diversas formas de controlar un LED, desde un encendido y apagado básico hasta la integración
+                             de retardos y botones como entradas digitales. Se analizaron y aplicaron condiciones lógicas OR y AND, demostrando 
+                             la versatilidad del NodeMCU en la gestión de señales digitales y la toma de decisiones en función de múltiples 
+                             entradas.
+                        </p>
                         
 
                         <p id="referencias">
