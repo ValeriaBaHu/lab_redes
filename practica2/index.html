@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1 | Ibero Puebla</title>
+        <title>Práctica 2 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Entradas y salidas digitales</h1>
+                        <h1 class="fw-bolder mb-1">Sensores Digitales, Analógicos e Inteligentes</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />-->
@@ -61,7 +61,7 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">30/01/2025</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">05/02/2025</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
@@ -78,24 +78,27 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Esta práctica permite comprender de manera clara y aplicada el funcionamiento de las entradas y salidas digitales en un microcontrolador,
-                             que son fundamentales en la electrónica y redes digitales. Al trabajar con un NodeMCU (ESP8266 o ESP32), se exploran los conceptos de cómo 
-                             las señales digitales pueden ser recibidas desde componentes como botones (entradas digitales) y cómo, a su vez, se pueden enviar señales 
-                             hacia dispositivos como LEDs (salidas digitales).</p>
-                        <p class="fs-6 mb-4">A través de la programación, se conecta la teoría con la práctica, permitiendo controlar el LED mediante las entradas de los botones. 
-                            De esta forma, se logra entender cómo los estados lógicos (0 y 1) se traducen en acciones físicas, como encender, apagar o hacer parpadear un
-                             LED.</p>
+                        <p class="fs-6 mb-4">En esta práctica se configuró el entorno de simulación Wokwi y Arduino IDE para probar y analizar el funcionamiento de tres 
+                            tipos de sensores: digital (botón), analógico (potenciómetro) e inteligente (DHT22). Se implementaron circuitos en Wokwi, verificando su 
+                            conexión y respuesta mediante programas en Arduino, permitiendo visualizar los datos generados por cada sensor. Además, se desarrolló un 
+                            programa de monitoreo utilizando un sensor PIR, el cual detecta movimiento y envía una señal digital al microcontrolador. Para su 
+                            implementación, se tomó como referencia la documentación del sensor, asegurando una configuración y lectura correctas.</p>
+                        <p class="fs-6 mb-4">Los resultados incluyen simulaciones en Wokwi, diagramas de conexión, imágenes del código en Arduino y videos de prueba física,
+                             lo que permitió validar el comportamiento de cada sensor y su integración con el microcontrolador. Esta práctica reforzó el conocimiento
+                              sobre los diferentes tipos de sensores, su funcionamiento y aplicación en proyectos de automatización y monitoreo.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Las entradas y salidas digitales son conceptos fundamentales en la electrónica y en el mundo de los microcontroladores. 
-                            Las entradas digitales son señales que provienen de dispositivos externos, como botones, sensores o interruptores, que permiten al 
-                            microcontrolador recibir información. Por otro lado, las salidas digitales son señales que el microcontrolador envía a dispositivos externos,
-                             como LEDs, relés o motores, para realizar alguna acción, también representadas por los estados "0" o "1". Estas salidas permiten controlar 
-                             o activar diferentes componentes físicos en función de la lógica programada en el microcontrolador.</p>
-                        <p class="fs-6 mb-4">Una señal digital es un tipo de señal generada por algún tipo de fenómeno electromagnético en que cada signo que codifica 
-                            el contenido de la misma puede ser analizado en término de algunas magnitudes que representan valores discretos, en lugar de valores dentro
-                             de un cierto rango.</p>
+                        <p class="fs-6 mb-4">Los sensores son dispositivos fundamentales en sistemas de medición y automatización, ya que permiten captar información 
+                            del entorno y convertirla en señales que pueden ser procesadas por un microcontrolador. Según el tipo de señal que generan, los sensores 
+                            se clasifican en analógicos, digitales e inteligentes, cada uno con características y aplicaciones específicas. Los sensores analógicos 
+                            producen señales continuas cuya variación es proporcional a la magnitud física que están midiendo, como ocurre con los potenciómetros o 
+                            sensores de temperatura basados en resistencia. Por otro lado, los sensores digitales generan señales binarias (alto o bajo, 1 o 0), como
+                             los botones o los sensores PIR, que detectan presencia o ausencia de movimiento.</p>
+                        <p class="fs-6 mb-4">Finalmente, los sensores inteligentes combinan la captura de datos con procesamiento interno, proporcionando información 
+                            ya calibrada y lista para ser utilizada. Un ejemplo común es el DHT22, que mide temperatura y humedad y envía los datos en un formato 
+                            digital procesado. Comprender las diferencias entre estos tipos de sensores es clave para su correcta selección y aplicación en proyectos
+                             de monitoreo y control, permitiendo optimizar el rendimiento y la precisión de los sistemas en los que se integran.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -104,109 +107,103 @@
                             <p class="fs-6 mb-4"> 4 resistencias de 1K ohm</p>
                             <p class="fs-6 mb-4"> Protoboard y cables</p>
                             <p class="fs-6 mb-4"> 1 resistencia de 220 ohms</p>
+                            <p class="fs-6 mb-4"> Node MCU ESP8266 o ESP32</p>
+                            <p class="fs-6 mb-4"> Sensores: Potenciómetro, DHT22, PIR</p>
                           </p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se configuró el entorno de desarrollo Arduino IDE para programar el NodeMCU, instalando las herramientas
-                            necesarias y verificando la correcta asignación de pines mediante su pinout. Una vez listo el entorno, se desarrollaron distintos programas
-                            para controlar un LED utilizando diferentes métodos. Inicialmente, se programó el encendido y apagado del LED mediante señales digitales a
-                            un GPIO, seguido de una versión con retardos para generar un parpadeo controlado. Posteriormente, se incorporó un botón como entrada digital
-                            para activar o desactivar el LED al presionarlo.</p>
-                        <p class="fs-6 mb-4">Cada etapa del desarrollo fue probada y validada, asegurando su correcto funcionamiento. La práctica permitió comprender la
-                             configuración del NodeMCU, la gestión de entradas y salidas digitales y la aplicación de estructuras lógicas en la programación de microcontroladores.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se configuró Wokwi y Arduino IDE para simular y programar tres tipos de sensores: digital (botón), 
+                            analógico (potenciómetro) e inteligente (DHT22). Se validó su funcionamiento a través de simulaciones, verificando la lectura de 
+                            señales y la comunicación con el microcontrolador. Además, se desarrolló un programa para monitorear un sensor PIR, detectando 
+                            movimiento y activando una respuesta visual. Posteriormente, cada circuito fue armado físicamente, replicando las conexiones probadas 
+                            en la simulación. Se documentó el proceso con imágenes de los diagramas, capturas del código en Arduino y videos de prueba, asegurando
+                             la correcta integración y operación de los sensores en cada una de sus aplicaciones.</p>
+                        <p class="fs-6 mb-4">Cada etapa del desarrollo fue probada y validada, asegurando su correcto funcionamiento. La práctica permitió c
+                            omprender la configuración del NodeMCU, el funcionamiento de varios tipos de sensoresy la aplicación de estructuras lógicas en la
+                             programación de microcontroladores.</p>
                              
                              
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación utilizando Wokwi y
-                                 el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite emular el comportamiento de 
-                                 microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones sin necesidad de hardware físico.</p>
-                            <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi. Esto permitió identificar
-                                 y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a esta etapa de simulación, 
-                                 se optimizó el diseño
-                                  y se garantizó que la lógica de control funcionara correctamente, minimizando riesgos en la fase de construcción.
-                                </p>
+                            <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación
+                                 utilizando Wokwi y el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite 
+                                 emular el comportamiento de microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones 
+                                 sin necesidad de hardware físico.</p>
+                            <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi.
+                                 Esto permitió identificar y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a
+                                  esta etapa de simulación, se optimizó el diseño y se garantizó que la lógica de control funcionara correctamente, minimizando 
+                                  riesgos en la fase de construcción.</p>
 
-                                <p class="fs-6 mb-4">Encendido/Apagado de un LED </p>
+                                <p class="fs-6 mb-4">Sensor digital </p>
                                 <iframe
-                                src="https://wokwi.com/projects/423279603348729857"
+                                src="https://wokwi.com/projects/422102092891422721"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Parpadeo de un LED </p>
+                                <p class="fs-6 mb-4">Sensor analógico </p>
                                 <iframe
-                                src="https://wokwi.com/projects/421551765403433985"
+                                src="https://wokwi.com/projects/422102985694339073"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Encendido de un LED con boton </p>
+                                <p class="fs-6 mb-4">Sensor inteligente </p>
                                 <iframe
-                                src="https://wokwi.com/projects/421553868202256385"
+                                src="https://wokwi.com/projects/422105538083127297"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Apagado de un LED con Boton</p>
+                                <p class="fs-6 mb-4">Spensor PIR</p>
                                 <iframe
-                                src="https://wokwi.com/projects/423289761016029185"
+                                src="https://wokwi.com/projects/422107482210561025"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Parpadeo de un Led con boton</p>
-                                <iframe
-                                src="https://wokwi.com/projects/423290390901050369"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
 
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Para el diseño, se definió la estructura y configuración del circuito, seleccionando los componentes adecuados y asignando los GPIOs del
-                                 NodeMCU para garantizar su correcto funcionamiento. Se elaboraron esquemas eléctricos que guiaron la conexión de elementos como LEDs, resistencias y
-                                  botones, permitiendo una implementación ordenada y eficiente. Además, se consideraron aspectos como la distribución de señales, la estabilidad del
-                                   sistema y la facilidad de montaje en una protoboard, asegurando un diseño funcional y replicable.</p>
+                            <p class="fs-6 mb-4">En esta etapa se definió la estructura de los circuitos para la correcta conexión y funcionamiento de los sensores 
+                                digitales, analógicos e inteligentes con el NodeMCU. Se seleccionaron los GPIOs adecuados para la lectura de señales y se diseñaron
+                                 esquemas eléctricos que guiaron la implementación en la simulación y el montaje físico. Se consideraron aspectos clave como la 
+                                 alimentación de los sensores, la estabilidad de las señales y la correcta interpretación de los datos enviados al microcontrolador.
+                                  Gracias a este diseño estructurado, se logró una integración eficiente de los sensores en el sistema, garantizando su funcionalidad
+                                   en las pruebas y la construcción final del circuito.</p>
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">En esta sección se presentan imágenes de los circuitos completamente ensamblados, destacando la correcta conexión
-                                 de los componentes utilizados en la práctica. Cada montaje fue realizado siguiendo el esquema correspondiente, asegurando la 
-                                 adecuada distribución de los GPIOs del NodeMCU, así como la correcta integración de elementos como LEDs, resistencias y botones.
-                                  Las fotografías ilustran el proceso de construcción, desde la disposición inicial de los componentes en una protoboard hasta la 
-                                  configuración final del circuito funcional</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <p class="fs-6 mb-4">Encendido/Apagado de un LED </p>
+                            <p class="fs-6 mb-4">En esta sección se presentan imágenes de los circuitos completamente ensamblados, destacando la correcta conexión de los componentes 
+                                utilizados en la práctica. Cada montaje fue realizado siguiendo el esquema correspondiente, asegurando la adecuada distribución de los GPIOs 
+                                del NodeMCU, así como la correcta integración de elementos como LEDs, resistencias y sensores. Las fotografías ilustran el proceso de 
+                                construcción, desde la disposición inicial de los componentes en una protoboard hasta la configuración final del circuito funcional</p>
+                              <p class="fs-6 mb-4">Sensor digital </p>
                                 <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio1.jpg" alt="..."></figure>
                                 
-                                <p class="fs-6 mb-4">Parpadeo de un LED </p>
+                                <p class="fs-6 mb-4">Sensor analógico </p>
                                 <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio2.png" alt="..."></figure>
                                 
-                                <p class="fs-6 mb-4">Encendido de un LED con boton </p>
+                                <p class="fs-6 mb-4">Sensor inteligente </p>
                                 <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio3.png" alt="..."></figure>
                                 
-                                <p class="fs-6 mb-4">Apagado de un LED con Boton</p>
+                                <p class="fs-6 mb-4">Sensor PID</p>
                                 <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio4.png" alt="..."></figure>
-                                
-                                <p class="fs-6 mb-4">Parpadeo de un Led con boton</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio5.png" alt="..."></figure>
-
+                               
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Se muestran los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento 
-                            de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
-                            como la ejecución de los distintos programas desarrollados para el control del LED.</p>
+                        <p class="fs-6 mb-4">En esta sección se presentan los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento
+                             de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
+                             como la ejecución de los distintos programas desarrollados para el control del LED.</p>
                         <p class="fs-6 mb-4">Cada video muestra el comportamiento del circuito en respuesta a las instrucciones programadas, incluyendo el encendido
-                             y apagado del LED, el uso de retardos para generar parpadeo y la implementación de botones con condiciones lógicas OR y AND. Estos
-                              resultados confirman la funcionalidad de los programas y el cumplimiento de los objetivos planteados en la práctica.
+                             y apagado del LED, el uso de retardos para generar parpadeo y la implementación de botones con condiciones lógicas OR y AND. Estos resultados
+                              confirman la funcionalidad de los programas y el cumplimiento de los objetivos planteados en la práctica.
 
                         </p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
@@ -215,14 +212,12 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Para finalizar, esta practica, nos permitió profundizar en conocimientos fundamentales sobre la 
-                            configuración del Arduino IDE para programar el NodeMCU, así como la importancia de comprender su distribución 
-                            de pines y GPIO disponibles. Se logró establecer una comunicación efectiva entre el entorno de desarrollo y la 
-                            construcción de los modelos, garantizando su correcta programación. A través de la implementación de diferentes 
-                            programas, se exploraron diversas formas de controlar un LED, desde un encendido y apagado básico hasta la integración
-                             de retardos y botones como entradas digitales. Se analizaron y aplicaron condiciones lógicas OR y AND, demostrando 
-                             la versatilidad del NodeMCU en la gestión de señales digitales y la toma de decisiones en función de múltiples 
-                             entradas.
+                        <p class="fs-6 mb-4">Esta práctica permitió comprender y diferenciar el funcionamiento de los sensores digitales, analógicos e inteligentes,
+                             así como su integración en proyectos de monitoreo y control mediante el NodeMCU. A través de la simulación en Wokwi y la programación 
+                             en Arduino IDE, se validó el comportamiento de cada sensor antes de su implementación física, lo que facilitó la identificación y corrección
+                              de posibles errores en la configuración y el código. La construcción de los circuitos físicos confirmó la precisión de las simulaciones y 
+                              permitió verificar el correcto procesamiento de datos en cada tipo de sensor. Además, el desarrollo del programa de monitoreo con el sensor
+                               PIR demostró la aplicación práctica de estos dispositivos en sistemas de automatización.
                         </p>
                         
 
