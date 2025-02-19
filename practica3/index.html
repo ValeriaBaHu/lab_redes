@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 2 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Sensores Digitales, Analógicos e Inteligentes</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />-->
+                            <div class="ms-2">
+                                <div class="fw-bold">Karen Itzel Najera De Gante y Valeria Barroso Huitrón</div>
+                                <div class="text-muted">Ingeniería mecatronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">05/02/2025</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/prac2.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica se configuró el entorno de simulación Wokwi y Arduino IDE para probar y analizar el funcionamiento de tres 
+                            tipos de sensores: digital (botón), analógico (potenciómetro) e inteligente (DHT22). Se implementaron circuitos en Wokwi, verificando su 
+                            conexión y respuesta mediante programas en Arduino, permitiendo visualizar los datos generados por cada sensor. Además, se desarrolló un 
+                            programa de monitoreo utilizando un sensor PIR, el cual detecta movimiento y envía una señal digital al microcontrolador. Para su 
+                            implementación, se tomó como referencia la documentación del sensor, asegurando una configuración y lectura correctas.</p>
+                        <p class="fs-6 mb-4">Los resultados incluyen simulaciones en Wokwi, diagramas de conexión, imágenes del código en Arduino y videos de prueba física,
+                             lo que permitió validar el comportamiento de cada sensor y su integración con el microcontrolador. Esta práctica reforzó el conocimiento
+                              sobre los diferentes tipos de sensores, su funcionamiento y aplicación en proyectos de automatización y monitoreo.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Los sensores son dispositivos fundamentales en sistemas de medición y automatización, ya que permiten captar información 
+                            del entorno y convertirla en señales que pueden ser procesadas por un microcontrolador. Según el tipo de señal que generan, los sensores 
+                            se clasifican en analógicos, digitales e inteligentes, cada uno con características y aplicaciones específicas. Los sensores analógicos 
+                            producen señales continuas cuya variación es proporcional a la magnitud física que están midiendo, como ocurre con los potenciómetros o 
+                            sensores de temperatura basados en resistencia. Por otro lado, los sensores digitales generan señales binarias (alto o bajo, 1 o 0), como
+                             los botones o los sensores PIR, que detectan presencia o ausencia de movimiento.</p>
+                        <p class="fs-6 mb-4">Finalmente, los sensores inteligentes combinan la captura de datos con procesamiento interno, proporcionando información 
+                            ya calibrada y lista para ser utilizada. Un ejemplo común es el DHT22, que mide temperatura y humedad y envía los datos en un formato 
+                            digital procesado. Comprender las diferencias entre estos tipos de sensores es clave para su correcta selección y aplicación en proyectos
+                             de monitoreo y control, permitiendo optimizar el rendimiento y la precisión de los sistemas en los que se integran.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">1 LED</p>
+                            <p class="fs-6 mb-4"> 4 botones</p>
+                            <p class="fs-6 mb-4"> 4 resistencias de 1K ohm</p>
+                            <p class="fs-6 mb-4"> Protoboard y cables</p>
+                            <p class="fs-6 mb-4"> 1 resistencia de 220 ohms</p>
+                            <p class="fs-6 mb-4"> Node MCU ESP8266 o ESP32</p>
+                            <p class="fs-6 mb-4"> Sensores: Potenciómetro, DHT22, PIR</p>
+                          </p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, se configuró Wokwi y Arduino IDE para simular y programar tres tipos de sensores: digital (botón), 
+                            analógico (potenciómetro) e inteligente (DHT22). Se validó su funcionamiento a través de simulaciones, verificando la lectura de 
+                            señales y la comunicación con el microcontrolador. Además, se desarrolló un programa para monitorear un sensor PIR, detectando 
+                            movimiento y activando una respuesta visual. Posteriormente, cada circuito fue armado físicamente, replicando las conexiones probadas 
+                            en la simulación. Se documentó el proceso con imágenes de los diagramas, capturas del código en Arduino y videos de prueba, asegurando
+                             la correcta integración y operación de los sensores en cada una de sus aplicaciones.</p>
+                        <p class="fs-6 mb-4">Cada etapa del desarrollo fue probada y validada, asegurando su correcto funcionamiento. La práctica permitió c
+                            omprender la configuración del NodeMCU, el funcionamiento de varios tipos de sensoresy la aplicación de estructuras lógicas en la
+                             programación de microcontroladores.</p>
+                             
+                             
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación
+                                 utilizando Wokwi y el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite 
+                                 emular el comportamiento de microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones 
+                                 sin necesidad de hardware físico.</p>
+                            <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi.
+                                 Esto permitió identificar y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a
+                                  esta etapa de simulación, se optimizó el diseño y se garantizó que la lógica de control funcionara correctamente, minimizando 
+                                  riesgos en la fase de construcción.</p>
+
+                                <p class="fs-6 mb-4">Sensor digital </p>
+                                <iframe
+                                src="https://wokwi.com/projects/422102092891422721"
+                                width="100%"
+                                height="600px"
+                                style="border: none;">
+                            </iframe>
+
+                                <p class="fs-6 mb-4">Sensor analógico </p>
+                                <iframe
+                                src="https://wokwi.com/projects/422102985694339073"
+                                width="100%"
+                                height="600px"
+                                style="border: none;">
+                            </iframe>
+
+                                <p class="fs-6 mb-4">Sensor inteligente </p>
+                                <iframe
+                                src="https://wokwi.com/projects/422105538083127297"
+                                width="100%"
+                                height="600px"
+                                style="border: none;">
+                            </iframe>
+
+                                <p class="fs-6 mb-4">Spensor PIR</p>
+                                <iframe
+                                src="https://wokwi.com/projects/422107482210561025"
+                                width="100%"
+                                height="600px"
+                                style="border: none;">
+                            </iframe>
+
+
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">En esta etapa se definió la estructura de los circuitos para la correcta conexión y funcionamiento de los sensores 
+                                digitales, analógicos e inteligentes con el NodeMCU. Se seleccionaron los GPIOs adecuados para la lectura de señales y se diseñaron
+                                 esquemas eléctricos que guiaron la implementación en la simulación y el montaje físico. Se consideraron aspectos clave como la 
+                                 alimentación de los sensores, la estabilidad de las señales y la correcta interpretación de los datos enviados al microcontrolador.
+                                  Gracias a este diseño estructurado, se logró una integración eficiente de los sensores en el sistema, garantizando su funcionalidad
+                                   en las pruebas y la construcción final del circuito.</p>
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">En esta sección se presentan imágenes de los circuitos completamente ensamblados, destacando la correcta conexión de los componentes 
+                                utilizados en la práctica. Cada montaje fue realizado siguiendo el esquema correspondiente, asegurando la adecuada distribución de los GPIOs 
+                                del NodeMCU, así como la correcta integración de elementos como LEDs, resistencias y sensores. Las fotografías ilustran el proceso de 
+                                construcción, desde la disposición inicial de los componentes en una protoboard hasta la configuración final del circuito funcional</p>
+
+                                <p class="fs-6 mb-4">Sensor digital </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px" src="img/ejercicio1.png" alt="..."></figure>
+                                
+                                <p class="fs-6 mb-4">Sensor analógico </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px" src="img/ejercicio2.png" alt="..."></figure>
+                                
+                                <p class="fs-6 mb-4">Sensor inteligente </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px" src="img/ejercicio3.png" alt="..."></figure>
+                                
+                                <p class="fs-6 mb-4">Sensor PID</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px" src="img/ejercicio4.png" alt="..."></figure>
+                               
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">En esta sección se presentan los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento
+                             de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
+                             como la ejecución de los distintos programas desarrollados para el control del LED.</p>
+                        <p class="fs-6 mb-4">Cada video muestra el comportamiento del circuito en respuesta a las instrucciones programadas, incluyendo el encendido
+                             y apagado del LED, el uso de retardos para generar parpadeo y la implementación de botones con condiciones lógicas OR y AND. Estos resultados
+                              confirman la funcionalidad de los programas y el cumplimiento de los objetivos planteados en la práctica.
+
+                        </p>
+                        <p>Sensor digital</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/ej1.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p>Sensor analógico</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/ej2.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p>Sensor inteligente</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/ej3.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p>Sensor PID</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/ej4.mp4" type="video/mp4">
+                        </video></p></figure>
+
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Esta práctica permitió comprender y diferenciar el funcionamiento de los sensores digitales, analógicos e inteligentes,
+                             así como su integración en proyectos de monitoreo y control mediante el NodeMCU. A través de la simulación en Wokwi y la programación 
+                             en Arduino IDE, se validó el comportamiento de cada sensor antes de su implementación física, lo que facilitó la identificación y corrección
+                              de posibles errores en la configuración y el código. La construcción de los circuitos físicos confirmó la precisión de las simulaciones y 
+                              permitió verificar el correcto procesamiento de datos en cada tipo de sensor. Además, el desarrollo del programa de monitoreo con el sensor
+                               PIR demostró la aplicación práctica de estos dispositivos en sistemas de automatización.
+                        </p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
+                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
+                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
