@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Sensores Digitales, Analógicos e Inteligentes</h1>
+                        <h1 class="fw-bolder mb-1">Wifi ESP32 – Thingspeak</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />-->
@@ -78,27 +78,21 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica se configuró el entorno de simulación Wokwi y Arduino IDE para probar y analizar el funcionamiento de tres 
-                            tipos de sensores: digital (botón), analógico (potenciómetro) e inteligente (DHT22). Se implementaron circuitos en Wokwi, verificando su 
-                            conexión y respuesta mediante programas en Arduino, permitiendo visualizar los datos generados por cada sensor. Además, se desarrolló un 
-                            programa de monitoreo utilizando un sensor PIR, el cual detecta movimiento y envía una señal digital al microcontrolador. Para su 
-                            implementación, se tomó como referencia la documentación del sensor, asegurando una configuración y lectura correctas.</p>
-                        <p class="fs-6 mb-4">Los resultados incluyen simulaciones en Wokwi, diagramas de conexión, imágenes del código en Arduino y videos de prueba física,
-                             lo que permitió validar el comportamiento de cada sensor y su integración con el microcontrolador. Esta práctica reforzó el conocimiento
-                              sobre los diferentes tipos de sensores, su funcionamiento y aplicación en proyectos de automatización y monitoreo.</p>
+                        <p class="fs-6 mb-4">En esta práctica se utilizó ThingSpeak como plataforma de monitoreo en la nube, empleando un NodeMCU ESP8266/ESP32 
+                            para recopilar y transmitir datos en tiempo real. Se configuró el entorno en Arduino IDE y Wokwi, verificando la conectividad WiFi del
+                             módulo. Se integraron sensores digital (botón), analógico (potenciómetro) e inteligente (DHT22), además de un sensor PIR para detección
+                              de movimiento, visualizando los datos en ThingSpeak. Se realizaron simulaciones en Wokwi antes del montaje físico en protoboard, 
+                              asegurando su correcto funcionamiento. Los resultados confirmaron la integración efectiva de los sensores, reforzando conocimientos 
+                              en IoT, redes inalámbricas y monitoreo remoto. </p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Los sensores son dispositivos fundamentales en sistemas de medición y automatización, ya que permiten captar información 
-                            del entorno y convertirla en señales que pueden ser procesadas por un microcontrolador. Según el tipo de señal que generan, los sensores 
-                            se clasifican en analógicos, digitales e inteligentes, cada uno con características y aplicaciones específicas. Los sensores analógicos 
-                            producen señales continuas cuya variación es proporcional a la magnitud física que están midiendo, como ocurre con los potenciómetros o 
-                            sensores de temperatura basados en resistencia. Por otro lado, los sensores digitales generan señales binarias (alto o bajo, 1 o 0), como
-                             los botones o los sensores PIR, que detectan presencia o ausencia de movimiento.</p>
-                        <p class="fs-6 mb-4">Finalmente, los sensores inteligentes combinan la captura de datos con procesamiento interno, proporcionando información 
-                            ya calibrada y lista para ser utilizada. Un ejemplo común es el DHT22, que mide temperatura y humedad y envía los datos en un formato 
-                            digital procesado. Comprender las diferencias entre estos tipos de sensores es clave para su correcta selección y aplicación en proyectos
-                             de monitoreo y control, permitiendo optimizar el rendimiento y la precisión de los sistemas en los que se integran.</p>
+                        <p class="fs-6 mb-4">En esta práctica se exploró el uso de la plataforma ThingSpeak en conjunto con el módulo NodeMCU ESP8266 o ESP32, permitiendo la
+                            transmisión y monitoreo de datos en tiempo real a través de internet. ThingSpeak es una herramienta de IoT (Internet of Things) que facilita 
+                            la visualización y análisis de datos provenientes de sensores conectados a microcontroladores con conectividad WiFi.</p>
+                        <p class="fs-6 mb-4">El objetivo principal fue identificar y comprobar el funcionamiento de esta plataforma mediante la configuración y
+                            prueba de sensores digitales, analógicos e inteligentes. Se realizaron conexiones de prueba a redes WiFi, la integración de sensores 
+                            en un tablero público de monitoreo y la simulación de cada circuito en Wokwi antes de su implementación física.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -113,76 +107,80 @@
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se configuró Wokwi y Arduino IDE para simular y programar tres tipos de sensores: digital (botón), 
-                            analógico (potenciómetro) e inteligente (DHT22). Se validó su funcionamiento a través de simulaciones, verificando la lectura de 
-                            señales y la comunicación con el microcontrolador. Además, se desarrolló un programa para monitorear un sensor PIR, detectando 
-                            movimiento y activando una respuesta visual. Posteriormente, cada circuito fue armado físicamente, replicando las conexiones probadas 
-                            en la simulación. Se documentó el proceso con imágenes de los diagramas, capturas del código en Arduino y videos de prueba, asegurando
-                             la correcta integración y operación de los sensores en cada una de sus aplicaciones.</p>
-                        <p class="fs-6 mb-4">Cada etapa del desarrollo fue probada y validada, asegurando su correcto funcionamiento. La práctica permitió c
-                            omprender la configuración del NodeMCU, el funcionamiento de varios tipos de sensoresy la aplicación de estructuras lógicas en la
-                             programación de microcontroladores.</p>
-                             
+                        <p class="fs-6 mb-4">La práctica inició con la configuración del entorno de desarrollo, utilizando Arduino IDE y Wokwi para simular el
+                             funcionamiento del NodeMCU ESP8266/ESP32. Se siguieron los tutoriales de configuración para establecer la conexión del microcontrolador
+                              a una red WiFi y verificar su correcta comunicación con ThingSpeak.</p>
+                        <p class="fs-6 mb-4">Posteriormente, se probaron tres tipos de sensores: 
+
+                            Sensor digital (botón): Detecta presiones y envía señales binarias. 
+                            
+                            Sensor analógico (potenciómetro): Proporciona valores de voltaje variables según su posición. 
+                            
+                            Sensor inteligente (DHT22): Mide temperatura y humedad y envía los datos en un formato digital procesado. </p>
+                            <p class="fs-6 mb-4">Después de comprobar el funcionamiento de estos sensores, se integró el sensor PIR con ThingSpeak, 
+                                creando un tablero de monitoreo público donde se visualizaron sus lecturas en tiempo real. El código fue modificado 
+                                para que los datos capturados se enviaran directamente a la plataforma.  </p>
                              
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación
-                                 utilizando Wokwi y el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite 
-                                 emular el comportamiento de microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones 
-                                 sin necesidad de hardware físico.</p>
-                            <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi.
-                                 Esto permitió identificar y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a
-                                  esta etapa de simulación, se optimizó el diseño y se garantizó que la lógica de control funcionara correctamente, minimizando 
-                                  riesgos en la fase de construcción.</p>
+                            <p class="fs-6 mb-4">Antes del montaje físico, se realizó la simulación de cada circuito en Wokwi. Se configuró el NodeMCU
+                                 para interactuar con los sensores y enviar datos a ThingSpeak, validando la correcta lectura de cada dispositivo y 
+                                la conectividad del módulo WiFi. Esta fase permitió depurar el código y verificar las conexiones antes del armado físico,
+                                 asegurando que el sistema funcionara correctamente. </p>
 
-                                <p class="fs-6 mb-4">Sensor digital </p>
+                                <p class="fs-6 mb-4">Escaneo wifi </p>
                                 <iframe
-                                src="https://wokwi.com/projects/422102092891422721"
+                                src="https://wokwi.com/projects/423999704545699841"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Sensor analógico </p>
+                                <p class="fs-6 mb-4">Sensor DIGITAL </p>
                                 <iframe
-                                src="https://wokwi.com/projects/422102985694339073"
+                                src="https://wokwi.com/projects/424001042180682753"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Sensor inteligente </p>
+                                <p class="fs-6 mb-4">Sensor ANALÓGICO </p>
                                 <iframe
-                                src="https://wokwi.com/projects/422105538083127297"
+                                src="https://wokwi.com/projects/424001344586896385"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Spensor PIR</p>
+                                <p class="fs-6 mb-4">Spensor INTELIGENTE</p>
                                 <iframe
-                                src="https://wokwi.com/projects/422107482210561025"
+                                src="https://wokwi.com/projects/424726338224837633"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
+
                             </iframe>
+                            <p class="fs-6 mb-4">Spensor PIR</p>
+                            <iframe
+                            src="https://wokwi.com/projects/424726427307674625"
+                            width="100%"
+                            height="600px"
+                            style="border: none;">
+                        </iframe>
 
 
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">En esta etapa se definió la estructura de los circuitos para la correcta conexión y funcionamiento de los sensores 
-                                digitales, analógicos e inteligentes con el NodeMCU. Se seleccionaron los GPIOs adecuados para la lectura de señales y se diseñaron
-                                 esquemas eléctricos que guiaron la implementación en la simulación y el montaje físico. Se consideraron aspectos clave como la 
-                                 alimentación de los sensores, la estabilidad de las señales y la correcta interpretación de los datos enviados al microcontrolador.
-                                  Gracias a este diseño estructurado, se logró una integración eficiente de los sensores en el sistema, garantizando su funcionalidad
-                                   en las pruebas y la construcción final del circuito.</p>
+                            <p class="fs-6 mb-4">Para la implementación de los circuitos, se planificó la conexión de cada sensor al NodeMCU, asegurando un uso eficiente
+                                 de los GPIOs. Se diseñaron los esquemas de conexión considerando la alimentación adecuada de cada sensor y la estabilidad de las señales.
+                                  Además, se programaron los códigos necesarios para la recopilación y envío de datos, asegurando la compatibilidad con la API de ThingSpeak.
+                                 </p>
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">En esta sección se presentan imágenes de los circuitos completamente ensamblados, destacando la correcta conexión de los componentes 
-                                utilizados en la práctica. Cada montaje fue realizado siguiendo el esquema correspondiente, asegurando la adecuada distribución de los GPIOs 
-                                del NodeMCU, así como la correcta integración de elementos como LEDs, resistencias y sensores. Las fotografías ilustran el proceso de 
-                                construcción, desde la disposición inicial de los componentes en una protoboard hasta la configuración final del circuito funcional</p>
+                            <p class="fs-6 mb-4">Tras validar la simulación, se procedió al ensamblaje de los circuitos en una protoboard, conectando los sensores y el NodeMCU 
+                                según el diseño previo. Se cargaron los códigos en el microcontrolador mediante Arduino IDE, y se realizaron pruebas de conexión a internet 
+                                para confirmar la correcta transmisión de datos a ThingSpeak. Se documentó el proceso con imágenes y videos de las pruebas realizadas. </p>
 
                                 <p class="fs-6 mb-4">Sensor digital </p>
                                 <figure class="mb-4" align="center"><img class="img-fluid rounded" width="300px" src="img/ejercicio1.png" alt="..."></figure>
@@ -199,12 +197,10 @@
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">En esta sección se presentan los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento
-                             de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
-                             como la ejecución de los distintos programas desarrollados para el control del LED.</p>
-                        <p class="fs-6 mb-4">Cada video muestra el comportamiento del circuito en respuesta a las instrucciones programadas, incluyendo el encendido
-                             y apagado del LED, el uso de retardos para generar parpadeo y la implementación de botones con condiciones lógicas OR y AND. Estos resultados
-                              confirman la funcionalidad de los programas y el cumplimiento de los objetivos planteados en la práctica.
+                        <p class="fs-6 mb-4">Los resultados de la práctica incluyen la verificación del correcto funcionamiento de los sensores y su integración 
+                            con ThingSpeak. Se logró monitorear en tiempo real los datos enviados por el botón, potenciómetro, DHT22 y PIR, comprobando la
+                             capacidad del NodeMCU para recopilar y transmitir información a la nube. Se documentaron los diagramas de conexión, simulaciones en 
+                             Wokwi, capturas del código en Arduino IDE y videos de prueba física, evidenciando el cumplimiento de los objetivos planteados. 
 
                         </p>
                         <p>Sensor digital</p>
@@ -230,14 +226,13 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Esta práctica permitió comprender y diferenciar el funcionamiento de los sensores digitales, analógicos e inteligentes,
-                             así como su integración en proyectos de monitoreo y control mediante el NodeMCU. A través de la simulación en Wokwi y la programación 
-                             en Arduino IDE, se validó el comportamiento de cada sensor antes de su implementación física, lo que facilitó la identificación y corrección
-                              de posibles errores en la configuración y el código. La construcción de los circuitos físicos confirmó la precisión de las simulaciones y 
-                              permitió verificar el correcto procesamiento de datos en cada tipo de sensor. Además, el desarrollo del programa de monitoreo con el sensor
-                               PIR demostró la aplicación práctica de estos dispositivos en sistemas de automatización.
+                        <p class="fs-6 mb-4">Esta práctica permitió comprender el uso de ThingSpeak como plataforma de monitoreo de datos en IoT, así como la
+                             integración de diferentes tipos de sensores con el NodeMCU ESP8266/ESP32. La simulación previa en Wokwi facilitó la depuración del
+                              código y la validación de conexiones, reduciendo errores en el montaje físico. 
                         </p>
-                        
+                        <p class="fs-6 mb-4"> Se demostró la capacidad del NodeMCU para conectarse a internet y enviar datos en tiempo real, lo que abre la 
+                            posibilidad de desarrollar aplicaciones más avanzadas en el ámbito del IoT. Además, la experiencia adquirida en la configuración
+                             de ThingSpeak y la programación en Arduino proporciona una base sólida para futuros proyectos de monitoreo remoto y automatización. </p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
