@@ -78,20 +78,23 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se combinan diversos sensores (digital, analógico e inteligente) en un solo proyecto utilizando el ESP32. 
-                            Se capturan simultáneamente los datos de un botón (sensor digital), un potenciómetro (sensor analógico), un DHT22 (sensor de temperatura y 
-                            humedad) y un sensor PIR (detección de movimiento), enviándolos a una aplicación web basada en PHP. De este modo, es posible visualizar en 
-                            un panel de control (dashboard) la variación de los valores en tiempo real, aprovechando la conectividad WiFi del ESP32.</p>
+                        <p class="fs-6 mb-4">En esta práctica se utilizan diversos sensores conectados a un ESP para recopilar datos en tiempo real. Posteriormente, 
+                            estos datos se procesan y se visualizan a través de gráficas interactivas utilizando la plataforma ThingSpeak, la cual permite almacenar 
+                            y analizar la información de manera eficiente.</p>
+                        <p class="fs-6 mb-4">
+                            Además, para facilitar el acceso a los datos y su visualización, se desarrolló una página web con la ayuda de Replit, una plataforma en 
+                            línea que permite la programación y despliegue de aplicaciones web de forma sencilla. En esta página, los usuarios pueden consultar las 
+                            gráficas correspondientes a cada sensor, lo que facilita el monitoreo y análisis de las mediciones obtenidas.
+                        </p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Los proyectos de Internet de las Cosas (IoT) suelen requerir la supervisión de múltiples variables al mismo tiempo y la 
-                            visualización de su comportamiento en tiempo real. Gracias a su conectividad WiFi y a la gran cantidad de pines de entrada/salida, el ESP32
-                             se presenta como una opción ideal para integrar distintos sensores y enviar la información a un servidor remoto.</p>
-                        <p class="fs-6 mb-4">En esta práctica, se explora la conexión simultánea de sensores digitales (botón y PIR), analógicos (potenciómetro) e 
-                            inteligentes (DHT22) con un ESP32. Además, se configura un servidor web con un script en PHP para recibir y desplegar los datos de los 
-                            sensores en un dashboard, permitiendo el monitoreo remoto en tiempo real. Esto facilita la personalización de la visualización de la 
-                            información sin depender de plataformas externas.</p>
+                        <p class="fs-6 mb-4">En la actualidad, el uso de sensores y la conectividad a la nube juegan un papel fundamental en el desarrollo de aplicaciones 
+                            de monitoreo y análisis de datos en tiempo real. Gracias a plataformas como ThingSpeak, es posible almacenar, procesar y visualizar la
+                             información proveniente de distintos sensores de manera eficiente.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se integran varios sensores con un ESP (un microcontrolador con conectividad WiFi) para recopilar datos y 
+                            enviarlos a ThingSpeak, donde se generan gráficas interactivas que facilitan su interpretación. Además, se desarrolló una página web utilizando
+                             Replit, permitiendo a los usuarios acceder a las visualizaciones de manera sencilla y en cualquier momento.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -120,72 +123,20 @@
                               y se garantizó que la lógica de control funcionara correctamente, minimizando riesgos en la fase de construcción.
                             </p>
 
-                                <p class="fs-6 mb-4">Encendido de un LED</p>
+                    
+                            <p class="fs-6 mb-4">PHP</p>
                                 <iframe
-                                src="https://wokwi.com/projects/423279603348729857"
+                                src="https://wokwi.com/projects/425886437428122625"
                                 width="100%"
                                 height="600px"
                                 style="border: none;">
                             </iframe>
 
-                                <p class="fs-6 mb-4">Parpadeo de un LED </p>
-                                <iframe
-                                src="https://wokwi.com/projects/421551765403433985"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
+                                <p class="fs-6 mb-4">Circuito</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/1.jpeg" alt="..."></figure>
 
-                                <p class="fs-6 mb-4">Encendido de un LED con boton </p>
-                                <iframe
-                                src="https://wokwi.com/projects/421553868202256385"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
-
-                                <p class="fs-6 mb-4">Apagado de un LED </p>
-                                <iframe
-                                src="https://wokwi.com/projects/423363128852458497"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
-
-                                <p class="fs-6 mb-4">AND</p>
-                                <iframe
-                                src="https://wokwi.com/projects/423348838935384065"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
-
-                            <p class="fs-6 mb-4">OR</p>
-                                <iframe
-                                src="https://wokwi.com/projects/423349296789833729"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
-
-                            
-                             <p class="fs-6 mb-4">Encendido de un LED </p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio1.jpg" alt="..."></figure>
-                                
-                                <p class="fs-6 mb-4">Parpadeo de un LED </p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio2.png" alt="..."></figure>
-                                
-                                <p class="fs-6 mb-4">Encendido de un LED con boton </p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ejercicio3.png" alt="..."></figure>
-                                
-                                <p class="fs-6 mb-4">Apagado de un LED </p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/ap.jfif" alt="..."></figure>
-                                
-                                <p class="fs-6 mb-4">AND</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/AND.jfif" alt="..."></figure>
-
-                                <p class="fs-6 mb-4">OR</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/Or.jfif" alt="..."></figure>
+                                <p class="fs-6 mb-4">Gráfica</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/imagen (1).png" alt="..."></figure>
 
 
 
@@ -195,25 +146,6 @@
                             de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
                             como la ejecución de los distintos programas desarrollados para el control del LED.</p>
                         
-                        <p>Parpadeo de un LED</p>
-                        <figure class="mb-4" align="center"><video width="40%"  controls>
-                            <source src="video/ejercicio2.mp4" type="video/mp4">
-                        </video></p></figure>
-                        
-                        <p>Encendido de un LED con boton</p>
-                        <figure class="mb-4" align="center"><video width="40%"  controls>
-                            <source src="video/ejercicio3.mp4" type="video/mp4">
-                        </video></p></figure>
-
-                        <p>Apagado de un LED </p>
-                        <figure class="mb-4" align="center"><video width="30%"  controls>
-                            <source src="video/ap.mp4" type="video/mp4">
-                        </video></p></figure>
-
-                        <p>AND</p>
-                        <figure class="mb-4" align="center"><video width="40%"  controls>
-                            <source src="video/and.mp4" type="video/mp4">
-                        </video></p></figure>
 
                         <p>OR</p>
                         <figure class="mb-4" align="center"><video width="40%"  controls>
