@@ -74,77 +74,94 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/1.jpeg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/1.jpeg" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica se utilizan diversos sensores conectados a un ESP para recopilar datos en tiempo real. Posteriormente, 
-                            estos datos se procesan y se visualizan a través de gráficas interactivas utilizando la plataforma ThingSpeak, la cual permite almacenar 
-                            y analizar la información de manera eficiente.</p>
-                        <p class="fs-6 mb-4">
-                            Además, para facilitar el acceso a los datos y su visualización, se desarrolló una página web con la ayuda de Replit, una plataforma en 
-                            línea que permite la programación y despliegue de aplicaciones web de forma sencilla. En esta página, los usuarios pueden consultar las 
-                            gráficas correspondientes a cada sensor, lo que facilita el monitoreo y análisis de las mediciones obtenidas.
+                        <p class="fs-6 mb-4">Este proyecto consiste en una puerta inteligente para perros que utiliza dos sensores ultrasónicos conectados a un ESP32. 
+                            La puerta se abre automáticamente cuando un perro se acerca, girando 90° gracias a un motor servo. Se han colocado dos sensores, uno en 
+                            cada lado de la puerta, para garantizar que siempre se abra hacia afuera. Un segundo ESP32 recibe una señal cada vez que la puerta se activa
+                             y emite un sonido mediante un buzzer, notificando la apertura. Además, el código en Arduino evita que ambos sensores activen la puerta 
+                             simultáneamente.
                         </p>
                         
-                        <p id="intro">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En la actualidad, el uso de sensores y la conectividad a la nube juegan un papel fundamental en el desarrollo de aplicaciones 
-                            de monitoreo y análisis de datos en tiempo real. Gracias a plataformas como ThingSpeak, es posible almacenar, procesar y visualizar la
-                             información proveniente de distintos sensores de manera eficiente.</p>
-                        <p class="fs-6 mb-4">En esta práctica, se integran varios sensores con un ESP (un microcontrolador con conectividad WiFi) para recopilar datos y 
-                            enviarlos a ThingSpeak, donde se generan gráficas interactivas que facilitan su interpretación. Además, se desarrolló una página web utilizando
-                             Replit, permitiendo a los usuarios acceder a las visualizaciones de manera sencilla y en cualquier momento.</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">1 LED</p>
-                            <p class="fs-6 mb-4"> Botones</p>
-                            <p class="fs-6 mb-4"> Resistencias de 1K ohm</p>
-                            <p class="fs-6 mb-4"> Protoboard y cables</p>
-                            <p class="fs-6 mb-4"> Esp32</p>
-                            <p class="fs-6 mb-4"> Potenciometro, PIR, DHT22</p>
+                    <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Funciones-</h2>
+                        <p class="fs-6 mb-4">Las funciones principales del proyecto incluyen:</p>
+                        <p class="fs-6 mb-4">Detección de proximidad con sensores ultrasónicos para abrir la puerta.</p>
+                        <p class="fs-6 mb-4"> Movimiento controlado de la puerta mediante un motor servo.</p>
+                        <p class="fs-6 mb-4"> Restricción de apertura simultánea para garantizar un solo sentido de movimiento.</p>
+                        <p class="fs-6 mb-4"> Notificación auditiva con buzzer al detectar una apertura.</p>
+                        <p class="fs-6 mb-4"> Integración de impresión 3D para la estructura del servo y el eje de la puerta.</p>
                           </p>
                         
-                        <p id="desarrollo">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Para la implementación del proyecto, se conectaron al ESP32 cuatro sensores: un botón (digital), un potenciómetro 
-                            (analógico), un DHT22 (temperatura y humedad) y un PIR (movimiento). Se programó el ESP32 en Arduino IDE para leer los datos de estos 
-                            sensores y enviarlos a un servidor web mediante WiFi.</p>
-                             
-                        <p id="simulacion">
-                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                        <p class="fs-6 mb-4">Para validar el funcionamiento del circuito antes de su construcción física, se realizó una simulación utilizando Wokwi y
-                             el entorno de desarrollo de Arduino IDE. Wokwi es una plataforma de simulación en línea que permite emular el comportamiento de 
-                             microcontroladores como el NodeMCU (ESP8266), facilitando la prueba de código y conexiones sin necesidad de hardware físico.</p>
-                        <p class="fs-6 mb-4">El Arduino IDE se utilizó para escribir y compilar el código antes de cargarlo en la simulación de Wokwi. Esto permitió identificar
-                             y corregir posibles errores en la programación antes de implementarla en el circuito real. Gracias a esta etapa de simulación, 
-                             se optimizó el diseño
-                              y se garantizó que la lógica de control funcionara correctamente, minimizando riesgos en la fase de construcción.
-                            </p>
+                    <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Hardware:</p>
+                        <p class="fs-6 mb-4">2 × ESP32</p>
+                        <p class="fs-6 mb-4"> 2 × Sensores ultrasónicos HC-SR04</p>
+                        <p class="fs-6 mb-4"> 1 × Servo motor (SG90 o similar)</p>
+                        <p class="fs-6 mb-4">1 × Buzzer pasivo</p>
+                        <p class="fs-6 mb-4"> Fuente de alimentación (5V)</p>
+                        <p class="fs-6 mb-4"> Soporte impreso en 3D para el eje del servo y la puerta</p>
+                       </p>
+                  <p class="fs-6 mb-4">Software:</p>
+                      <p class="fs-6 mb-4">Arduino IDE (para la programación de los ESP32)</p>
+                      <p class="fs-6 mb-4"> CATIA (para modelado 3D)</p>
+                      <p class="fs-6 mb-4"> Cura / PrusaSlicer (para preparación de impresión 3D)</p>
+                    </p>
+                  <p id="desarrollo">
+                      <h2 class="fw-bolder mb-4 mt-5 fs-5">- Diagrama de cableado -</h2>
+                      <p class="fs-6 mb-4">El sistema se conecta de la siguiente manera:</p>
+                      <p class="fs-6 mb-4">Los sensores ultrasónicos están conectados a los pines GPIO del ESP32.</p>
+                      <p class="fs-6 mb-4">El servo motor recibe señal de control del ESP32 principal.</p>
+                      <p class="fs-6 mb-4"> El buzzer está vinculado al segundo ESP32 para emitir el sonido de alerta.</p>
+                      <p class="fs-6 mb-4"> Alimentación de 5V común para todos los componentes.</p>
+                     </p>
 
-                    
-                            <p class="fs-6 mb-4">PHP</p>
-                                <iframe
-                                src="https://wokwi.com/projects/425886437428122625"
-                                width="100%"
-                                height="600px"
-                                style="border: none;">
-                            </iframe>
+                  <p id="desarrollo">
+                     <h2 class="fw-bolder mb-4 mt-5 fs-5">- Código -</h2>
+                      <p class="fs-6 mb-4">El código en Arduino realiza las siguientes funciones:</p>
+                      <p class="fs-6 mb-4">Lectura de los sensores ultrasónicos para detectar la proximidad del perro.</p>
+                      <p class="fs-6 mb-4">Control del servo para girar la puerta 90° en la dirección correcta.</p>
+                      <p class="fs-6 mb-4"> Bloqueo para evitar que ambos sensores activen el servo al mismo tiempo.</p>
+                      <p class="fs-6 mb-4"> Comunicación entre ESP32 para que el buzzer suene al activarse la puerta.</p>
+                     </p>
 
-                                <p class="fs-6 mb-4">Circuito</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/1.jpeg" alt="..."></figure>
+                    <p id="simulacion">
+                     <h2 class="fw-bolder mb-4 mt-5 fs-5">- Impresión en 3D -</h2>
+                      <p class="fs-6 mb-4">Material: PLA o PETG</p>
+                      <p class="fs-6 mb-4">Altura de capa: 0.2 mm</p>
+                      <p class="fs-6 mb-4">Infill: 30%</p>
+                      <p class="fs-6 mb-4"> Soportes: Sí, en la base del eje del servo y agregar adhesion </p>
+                    </p>
 
-                                <p class="fs-6 mb-4">Gráfica</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/imagen (1).png" alt="..."></figure>
+                    <p id="simulacion">
+                     <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ensamblaje -</h2>
+                      <p class="fs-6 mb-4">Imprimir y montar el soporte del servo en la puerta.</p>
+                      <p class="fs-6 mb-4">Conectar los sensores ultrasónicos en los extremos de la entrada.</p>
+                      <p class="fs-6 mb-4">Fijar el servo motor en su posición y conectar el eje impreso en 3D.</p>
+                      <p class="fs-6 mb-4">Instalar el ESP32 y realizar las conexiones según el diagrama.</p>
+                      <p class="fs-6 mb-4">Subir el código a los ESP32 y probar el sistema.</p>            
+                      </p>
+                    <p id="simulacion">
+                     <h2 class="fw-bolder mb-4 mt-5 fs-5">- Instrucciones de demostración y uso -</h2>
+                      <p class="fs-6 mb-4">La puerta se abre automáticamente cuando un perro se acerca.</p>
+                      <p class="fs-6 mb-4">Siempre se abre hacia afuera, evitando colisiones.</p>
+                      <p class="fs-6 mb-4">Al abrirse, se envía una señal al otro ESP32 para activar el buzzer.</p>
+                      <p class="fs-6 mb-4">El código impide la activación simultánea de los sensores para un funcionamiento óptimo.</p>           
+                      </p>
+                    <p id="simulacion">
+                      <h2 class="fw-bolder mb-4 mt-5 fs-5">- Notas adicionales -</h2>
+                      <p class="fs-6 mb-4">Asegurar una correcta alineación del servo y la puerta para un giro preciso.</p>
+                      <p class="fs-6 mb-4">Verificar el tiempo de respuesta de los sensores ultrasónicos.</p>
+                      <p class="fs-6 mb-4">Considerar el uso de una batería recargable si se desea hacer portátil.</p>          
+                                    </p>
+   
 
-
-
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Se muestran los resultados obtenidos a lo largo de la práctica mediante videos que evidencian el correcto funcionamiento 
-                            de los circuitos programados. A través de estas demostraciones visuales, se validan las configuraciones realizadas en el NodeMCU, así 
-                            como la ejecución de los distintos programas desarrollados para el control del LED.</p>
+                 <p id="resultados">
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                    <figure class="mb-4" align="center"><img class="img-fluid rounded" width="400px" src="img/1.jpeg" alt="..."></figure>
                         
 
                         <p>PHP</p>
