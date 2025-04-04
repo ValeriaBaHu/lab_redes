@@ -126,7 +126,7 @@
                       <p class="fs-6 mb-4">Lectura de los sensores ultrasónicos para detectar la proximidad del perro.</p>
                       <p class="fs-6 mb-4">Control del servo para girar la puerta 90° en la dirección correcta.</p>
                       <p class="fs-6 mb-4"> Bloqueo para evitar que ambos sensores activen el servo al mismo tiempo.</p>
-                      <p class="fs-6 mb-4"> Comunicación entre ESP32 para que el buzzer suene al activarse la puerta.</p>
+                      <p class="fs-6 mb-4"> Comunicación entre ESP32 para que el buzzer suene al activarse la puerta y muestra del movimiento en ThingSpeak.</p>
                      </p>
 
                     <p id="simulacion">
@@ -149,7 +149,7 @@
                      <h2 class="fw-bolder mb-4 mt-5 fs-5">- Instrucciones de demostración y uso -</h2>
                       <p class="fs-6 mb-4">La puerta se abre automáticamente cuando un perro se acerca.</p>
                       <p class="fs-6 mb-4">Siempre se abre hacia afuera, evitando colisiones.</p>
-                      <p class="fs-6 mb-4">Al abrirse, se envía una señal al otro ESP32 para activar el buzzer.</p>
+                      <p class="fs-6 mb-4">Al abrirse, se envía una señal al otro ESP32 para activar el buzzer y en ThingSpeak se muestra el movimiento.</p>
                       <p class="fs-6 mb-4">El código impide la activación simultánea de los sensores para un funcionamiento óptimo.</p>           
                       </p>
                     <p id="simulacion">
@@ -163,9 +163,11 @@
                  <p id="resultados"> </p>
                     <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                     
-                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                    <figure class="mb-4" align="center"><video width="80%"  controls>
                         <source src="video/2.mp4" type="video/mp4">
                         </video></p></figure>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">Movimiento en ThingSpeak</h2>
+                        <figure class="mb-4"><img class="img-fluid rounded" width="600px" src="img/3.jpeg" alt="..." /></figure>
                         
                          
                     <p id="descargables">
